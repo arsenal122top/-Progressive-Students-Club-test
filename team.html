@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Responsive: viewport нужен для корректного масштаба страницы на мобильных устройствах -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Команда Progressive Students Club — наставники и участники, которые развивают проекты, коммуникацию и атмосферу клуба в Бишкеке.">
+  <title>Команда | Progressive Students Club — Бишкек</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="apple-touch-icon" href="logo.png" />
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+  <link rel="stylesheet" href="main.css" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SYBMK0LTW3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-SYBMK0LTW3');
+  </script>
+</head>
+<body>
+  <div class="background-blur blur-one"></div>
+  <div class="background-blur blur-two"></div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html#home" class="brand">
+        <span class="brand-icon"><img src="logo.png" alt="Progressive Students Club logo" /></span>
+        <span>Progressive Students Club</span>
+      </a>
+
+      <!-- Responsive: кнопка гамбургер-меню для мобильной навигации -->
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-controls="site-nav" aria-expanded="false">&#9776;</button>
+
+      <!-- Responsive: навигация перестраивается в вертикальное меню на маленьких экранах -->
+      <nav class="site-nav" id="site-nav">
+        <a href="index.html#home">Главная</a>
+        <a href="index.html#about">О клубе</a>
+        <a href="index.html#program">Программа</a>
+        <a href="team.html">Команда</a>
+        <a href="index.html#projects">Проекты</a>
+        <a href="index.html#contacts">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container page-hero-grid">
+        <div>
+          <span class="tag">Наша команда</span>
+          <h1>Люди, которые двигают клуб вперёд</h1>
+          <p class="subtitle">Портфолио-страница наставника и участников, которые развивают проекты, коммуникацию, креативные идеи и внутренние процессы клуба.</p>
+          <div class="hero-actions">
+            <a href="index.html#contacts" class="btn btn-primary">Связаться с клубом</a>
+            <a href="index.html#home" class="btn btn-ghost">На главную</a>
+          </div>
+        </div>
+
+        <aside class="team-highlight-card">
+          <div>
+            <h3>Что есть на этой странице</h3>
+            <p>Адаптивные карточки, единый источник данных, фильтрация по ролям и классам, а также модальное окно с подробной информацией.</p>
+          </div>
+          <div class="team-stats">
+            <div class="team-stat">
+              <strong><span data-count="19">0</span></strong>
+              <span>Профилей</span>
+            </div>
+            <div class="team-stat">
+              <strong><span data-count="4">0</span></strong>
+              <span>Класса и наставник</span>
+            </div>
+            <div class="team-stat">
+              <strong><span data-count="1">0</span></strong>
+              <span>Общий источник данных</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section team-page-section">
+      <div class="container">
+        <div class="team-section-copy">
+          <h2>Команда клуба</h2>
+          <p class="subtitle">Используйте фильтры, чтобы посмотреть участников по ролям или классам. Нажмите на карточку, чтобы открыть подробный профиль.</p>
+        </div>
+
+        <!-- Responsive: фильтры на мобильных экранах становятся вертикальными -->
+        <div class="team-filters">
+          <div class="team-filter-wrap">
+            <label for="team-role-filter">Фильтр по роли</label>
+            <select id="team-role-filter" class="team-filter" data-team-role-filter></select>
+          </div>
+          <div class="team-filter-wrap">
+            <label for="team-class-filter">Фильтр по классу</label>
+            <select id="team-class-filter" class="team-filter" data-team-class-filter></select>
+          </div>
+        </div>
+
+        <!-- Responsive: карточки команды автоматически перестраиваются в меньшее число колонок -->
+        <div class="team-featured-wrap team-page-featured" data-team-featured></div>
+        <div class="team-grid" data-team-grid></div>
+        <noscript>
+          <div style="text-align:center; padding: 2rem; font-family: sans-serif;">
+            <p>Для просмотра карточек команды необходимо включить JavaScript в браузере.</p>
+            <p>Вы также можете связаться с нами напрямую:</p>
+            <p>Instagram: <a href="https://www.instagram.com/spclub.kg">@spclub.kg</a></p>
+            <p>Email: <a href="mailto:psclub.kg@gmail.com">psclub.kg@gmail.com</a></p>
+          </div>
+        </noscript>
+        <p class="team-empty-state" data-team-empty hidden>По выбранным фильтрам участники не найдены.</p>
+      </div>
+    </section>
+  </main>
+
+  <div class="team-modal" data-team-modal hidden>
+    <div class="team-modal-backdrop" data-team-modal-backdrop></div>
+    <article class="card team-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="team-modal-name">
+      <button type="button" class="team-modal-close" data-team-modal-close aria-label="Закрыть профиль">&times;</button>
+      <div class="team-modal-grid">
+        <div class="team-modal-media">
+          <img src="" alt="" data-team-modal-image />
+        </div>
+        <div class="team-modal-content">
+          <p class="team-member-role" data-team-modal-role></p>
+          <h2 id="team-modal-name" data-team-modal-name></h2>
+          <p class="team-member-meta">
+            <span class="team-badge" data-team-modal-class></span>
+          </p>
+          <p data-team-modal-description></p>
+          <p data-team-modal-details></p>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>Progressive Students Club</p>
+      <p>Bishkek</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

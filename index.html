@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Responsive: viewport нужен для корректного масштаба страницы на мобильных устройствах -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Progressive Students Club — образовательное пространство для школьников 10–11 классов в Бишкеке. Развиваем soft skills, самосознание, командную работу и помогаем с профессиональной ориентацией.">
+  <title>Progressive Students Club — образовательный клуб для школьников 10–11 классов в Бишкеке</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <link rel="apple-touch-icon" href="logo.png" />
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SYBMK0LTW3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-SYBMK0LTW3');
+  </script>
+</head>
+<body>
+  <div class="scroll-progress" data-scroll-progress aria-hidden="true"></div>
+  <div class="background-blur blur-one"></div>
+  <div class="background-blur blur-two"></div>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand">
+        <span class="brand-icon"><img src="logo.png" alt="Progressive Students Club logo" /></span>
+        <span>Progressive Students Club</span>
+      </a>
+
+      <!-- Responsive: кнопка гамбургер-меню для мобильной навигации -->
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-controls="site-nav" aria-expanded="false">&#9776;</button>
+
+      <!-- Responsive: навигация перестраивается в вертикальное меню на маленьких экранах -->
+      <nav class="site-nav" id="site-nav">
+        <a href="#home">Главная</a>
+        <a href="#about">О клубе</a>
+        <a href="#program">Программа</a>
+        <a href="team.html">Команда</a>
+        <a href="#projects">Проекты</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="section hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="tag">Bishkek Student Community</span>
+          <h1>Progressive Students Club</h1>
+          <p class="hero-lede">&#1059;&#1084;&#1085;&#1086;&#1077; &#1089;&#1086;&#1086;&#1073;&#1097;&#1077;&#1089;&#1090;&#1074;&#1086; &#1076;&#1083;&#1103; &#1096;&#1082;&#1086;&#1083;&#1100;&#1085;&#1080;&#1082;&#1086;&#1074;, &#1082;&#1086;&#1090;&#1086;&#1088;&#1099;&#1077; &#1093;&#1086;&#1090;&#1103;&#1090; &#1088;&#1072;&#1089;&#1090;&#1080; &#1089;&#1084;&#1077;&#1083;&#1086;, &#1086;&#1089;&#1086;&#1079;&#1085;&#1072;&#1085;&#1085;&#1086; &#1080; &#1074; &#1089;&#1080;&#1083;&#1100;&#1085;&#1086;&#1081; &#1082;&#1086;&#1084;&#1072;&#1085;&#1076;&#1077;.</p>
+          <p class="subtitle">Образовательное пространство, ориентированное на рост, для учащихся 10-11 классов, чтобы развивать самосознание, навыки общения и работу над проектами для реальной взрослости.</p>
+          <div class="hero-actions">
+            <a href="#contacts" class="btn btn-primary">присоединиться</a>
+            <a href="#about" class="btn btn-ghost">Узнать больше</a>
+          </div>
+          <div class="hero-stats" aria-label="Progressive Students Club social proof">
+            <div class="hero-stat">
+              <strong><span data-count="18">0</span>+</strong>
+              <span>&#1091;&#1095;&#1072;&#1089;&#1090;&#1085;&#1080;&#1082;&#1086;&#1074;</span>
+            </div>
+            <div class="hero-stat">
+              <strong><span data-count="9">0</span></strong>
+              <span>&#1074;&#1089;&#1090;&#1088;&#1077;&#1095;</span>
+            </div>
+          </div>
+          <p class="short-desc">Мы помогаем школьникам сознательно формировать свою профессиональную ориентацию через наставничество, командную работу и практические занятия по нескольку дней в неделю..</p>
+        </div>
+
+        <div class="logo-card aura-card">
+          <span class="aura-orbit orbit-one" aria-hidden="true"></span>
+          <span class="aura-orbit orbit-two" aria-hidden="true"></span>
+          <img src="images/gallery/photo-1.jpg" alt="&#1060;&#1086;&#1090;&#1086; &#1074;&#1089;&#1090;&#1088;&#1077;&#1095;&#1080; Progressive Students Club" class="logo-image" />
+          <a href="team.html" class="btn hero-photo-link">Смотреть команду</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>О клубе</h2>
+        <!-- Responsive: на мобильных карточки переходят в одну колонку -->
+        <div class="cards two-col">
+          <article class="card">
+            <h3>Цель и миссия:</h3>
+            <p>Создание образовательной среды для развития школьников 10-11 классов, в которой они сознательно формируют навыки общения, взаимодействия и работы над проектами, определяют свою профессиональную ориентацию и готовятся к независимой взрослости.</p>
+          </article>
+          <article class="card">
+            <h3>Детали клуба</h3>
+            <ul class="info-list">
+              <li><strong>Целевая аудитория:</strong> ученики 10-11 классов</li>
+              <li><strong>Город:</strong> Бишкек</li>
+              <li><strong>Instagram:</strong> <a href="https://www.instagram.com/spclub.kg" target="_blank" rel="noopener noreferrer">@spclub.kg</a></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="program" class="section">
+      <div class="container">
+        <h2>Программа</h2>
+        <!-- Responsive: сетка этапов адаптируется под ширину экрана -->
+        <div class="cards three-col stages">
+          <article class="card">
+            <h3>Самосознание:</h3>
+            <p>Значимости, сильные стороны, мировоззрение и эмоциональный интеллект:</p>
+          </article>
+          <article class="card">
+            <h3>Навыки и выбор:</h3>
+            <p>Коммуникация, командная работа, работа над проектами и профессиональное направление.</p>
+          </article>
+          <article class="card">
+            <h3>Взрослая жизнь</h3>
+            <p>Ответственность, планирование, основы финансового знания и независимое действие:</p>
+          </article>
+        </div>
+
+        <div class="meetings-entry-wrap" data-meetings-entry></div>
+      </div>
+    </section>
+
+    <section id="team" class="section">
+      <div class="container">
+        <div class="team-section-head">
+          <div class="team-section-copy">
+            <span class="tag">Команда</span>
+            <h2>Команда</h2>
+            <p class="subtitle">Люди, которые развивают клуб, создают проекты и делают сообщество живым.</p>
+          </div>
+          <a href="team.html" class="btn btn-primary">Смотреть всю команду</a>
+        </div>
+
+        <div class="team-preview-grid" data-team-preview></div>
+        <div class="team-preview-note">
+          <a href="team.html" class="btn btn-ghost team-preview-link">Открыть страницу команды</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Проекты</h2>
+        <div class="cards three-col">
+          <article class="card">
+            <h3>Школьная медиа-лаборатория</h3>
+            <p>Школьные коммуникационные проекты, направленные на совершенствование навыков устной речи, письма и рассказывания историй.</p>
+          </article>
+          <article class="card">
+            <h3>Карьерная пробная неделя</h3>
+            <p>Микро-задачи и сессии с куратором для тестирования интересов в реальных профессиональных направлениях.</p>
+          </article>
+          <article class="card">
+            <h3>Городские мини-проекты</h3>
+            <p>Командные проекты, направленные на практические решения проблем молодежи и школьного сообщества в Бишкеке.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>Фотогалерея</h2>
+      <p class="section-subtitle">Моменты из жизни клуба</p>
+
+      <div class="gallery-grid">
+        <a href="images/gallery/photo-1.jpg" class="glightbox" data-gallery="club-gallery" data-description="Встреча клуба">
+          <img src="images/gallery/photo-1.jpg" alt="Встреча клуба 1" loading="lazy">
+        </a>
+        <a href="images/gallery/photo-2.jpg" class="glightbox" data-gallery="club-gallery" data-description="Работа в команде">
+          <img src="images/gallery/photo-2.jpg" alt="Работа в команде" loading="lazy">
+        </a>
+        <a href="images/gallery/photo-3.jpg" class="glightbox" data-gallery="club-gallery" data-description="Проектная сессия">
+          <img src="images/gallery/photo-3.jpg" alt="Проектная сессия" loading="lazy">
+        </a>
+        <a href="images/gallery/photo-4.jpg" class="glightbox" data-gallery="club-gallery" data-description="Обсуждение идей">
+          <img src="images/gallery/photo-4.jpg" alt="Обсуждение идей" loading="lazy">
+        </a>
+        <a href="images/gallery/photo-5.jpg" class="glightbox" data-gallery="club-gallery" data-description="Мероприятие клуба">
+          <img src="images/gallery/photo-5.jpg" alt="Мероприятие клуба" loading="lazy">
+        </a>
+        <a href="images/gallery/photo-6.jpg" class="glightbox" data-gallery="club-gallery" data-description="Команда в деле">
+          <img src="images/gallery/photo-6.jpg" alt="Команда в деле" loading="lazy">
+        </a>
+      </div>
+      <a href="week.html" class="btn btn-ghost gallery-more-link">Смотреть ещё</a>
+    </section>
+
+    <section id="faq" class="section faq-section">
+      <div class="container">
+        <div class="faq-shell">
+          <div class="faq-header">
+            <span class="tag">FAQ</span>
+            <h2>Часто задаваемые вопросы</h2>
+            <p class="subtitle">Коротко собрали самое важное о клубе, формате встреч и том, как к нам присоединиться.</p>
+          </div>
+
+          <div class="faq-list" data-faq>
+            <article class="faq-item card is-open" data-faq-item>
+              <button class="faq-question" type="button" aria-expanded="true">
+                <span>Кто может вступить в Progressive Students Club?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-answer-wrap" data-faq-panel>
+                <div class="faq-answer">
+                  <p>В клуб могут вступить школьники 10-11 классов, которым интересно развивать soft skills, работать в команде, пробовать себя в проектах и лучше понимать своё будущее направление.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="faq-item card" data-faq-item>
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Что происходит на встречах клуба?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-answer-wrap" data-faq-panel>
+                <div class="faq-answer">
+                  <p>Обычно это обсуждения, практические задания, командная работа, мини-проекты и встречи, которые помогают лучше понять свои сильные стороны, научиться взаимодействовать и делать реальные инициативы.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="faq-item card" data-faq-item>
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Нужен ли опыт в проектах или лидерстве?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-answer-wrap" data-faq-panel>
+                <div class="faq-answer">
+                  <p>Нет, специальный опыт не обязателен. Важнее интерес, готовность участвовать и желание расти. Клуб как раз помогает постепенно развивать уверенность, инициативность и навыки общения.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="faq-item card" data-faq-item>
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Сколько времени нужно уделять участию?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-answer-wrap" data-faq-panel>
+                <div class="faq-answer">
+                  <p>Нагрузка зависит от активности самого участника, но формат рассчитан так, чтобы его можно было совмещать со школой. Обычно это регулярные встречи и посильное участие в командных задачах в течение недели.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="faq-item card" data-faq-item>
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Какие навыки можно развить в клубе?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-answer-wrap" data-faq-panel>
+                <div class="faq-answer">
+                  <p>Участники прокачивают коммуникацию, командную работу, самопрезентацию, ответственность, креативное мышление и базовые навыки проектной деятельности, которые полезны и в учёбе, и в дальнейшей карьере.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="faq-item card" data-faq-item>
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span>Как подать заявку или задать вопрос?</span>
+                <span class="faq-icon" aria-hidden="true"></span>
+              </button>
+              <div class="faq-answer-wrap" data-faq-panel>
+                <div class="faq-answer">
+                  <p>Самый простой способ — написать нам в Instagram или на почту из блока контактов ниже. Если хотите, можно сразу коротко рассказать о себе и почему вам интересно стать частью клуба.</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts" class="section">
+      <div class="container">
+        <h2>Контакты</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Связаться с нами</h3>
+            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/spclub.kg" target="_blank" rel="noopener noreferrer">@spclub.kg</a></p>
+            <p><strong>Почта:</strong> <a href="mailto:psclub.kg@gmail.com?subject=%D0%9E%D0%B1%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0&body=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5!%20%D0%9F%D0%B8%D1%88%D1%83%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20Progressive%20Students%20Club.">psclub.kg@gmail.com</a></p>
+            <p><strong>Город:</strong> Бишкек</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>Progressive Students Club</p>
+      <p>Bishkek</p>
+    </div>
+  </footer>
+
+  <button
+    type="button"
+    class="facts-fab"
+    data-facts-toggle
+    aria-label="Открыть полезные факты"
+    aria-controls="facts-popup"
+    aria-expanded="false"
+  >
+    <span class="facts-fab-ring" aria-hidden="true"></span>
+    <span class="facts-fab-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+        <path d="M12 2.75a7 7 0 0 0-4.61 12.27c.83.72 1.36 1.39 1.63 2.12.07.19.24.31.44.31h5.08c.2 0 .37-.12.44-.31.27-.73.8-1.4 1.63-2.12A7 7 0 0 0 12 2.75Zm-2.16 15.8h4.32a2.16 2.16 0 0 1-4.32 0Zm.74 2.05h2.84" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"/>
+        <path d="M9.75 20.6h4.5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"/>
+        <path d="M9.35 9.9c.32-1.56 1.67-2.7 3.3-2.7" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.8"/>
+      </svg>
+    </span>
+  </button>
+
+  <div class="facts-popup" data-facts-popup hidden>
+    <div class="facts-popup-backdrop" data-facts-close></div>
+    <section
+      class="facts-popup-panel"
+      id="facts-popup"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="facts-popup-title"
+      tabindex="-1"
+    >
+      <div class="facts-popup-head">
+        <div>
+          <p class="facts-popup-kicker">Интерактив</p>
+          <h3 id="facts-popup-title">Полезные факты</h3>
+        </div>
+        <button type="button" class="facts-popup-close" data-facts-close aria-label="Закрыть окно">×</button>
+      </div>
+
+      <div class="facts-popup-tabs" role="tablist" aria-label="Режимы окна">
+        <button
+          type="button"
+          class="facts-tab is-active"
+          data-facts-tab="facts"
+          role="tab"
+          aria-selected="true"
+        >
+          Факты
+        </button>
+        <button
+          type="button"
+          class="facts-tab"
+          data-facts-tab="game"
+          role="tab"
+          aria-selected="false"
+        >
+          Мини-игра
+        </button>
+      </div>
+
+      <div class="facts-popup-body">
+        <div class="facts-view is-active" data-facts-view="facts">
+          <div class="facts-feed" aria-label="Лента полезных фактов">
+            <article class="fact-post">
+              <p>Где ты видишь себя честно<br>и при этом не предаёшь.<br>Она не кричит.<br>Она тихо говорит:<br>«я могу ошибаться, но я всё равно окей»<br>и в этом — сила.<br>Потому что, когда ты на своей стороне,<br>мир уже не кажется таким враждебным.</p>
+              <p><strong>Вопрос:</strong><br>когда тебе в последний раз было по-настоящему комфортно с самим собой?</p>
+            </article>
+            <article class="fact-post">
+              <p>Самооценка — это не про идеальность.<br>Это про то, как ты разговариваешь с собой, когда остаёшься один.<br>В моменты, когда ошибся —<br>ты себя добиваешь<br>или пытаешься понять?</p>
+              <p>Мы привыкли оценивать себя через других:<br>кто лучше, кто успешнее, кто «достаточно хороший».<br>И в этой гонке легко потерять себя настоящего.</p>
+              <p>Низкая самооценка — это не скромность.<br>Это привычка не замечать свои сильные стороны.<br>Завышенная — это не уверенность.<br>Это страх признать свои слабости.</p>
+            </article>
+            <article class="fact-post">
+              <p>Уметь сказать «нет» — не значит быть плохим.<br>Это значит не предавать себя ради чужого комфорта.<br>Люди привыкают к тому, что ты позволяешь.<br>И если ты всегда молчишь — они думают, что так можно.</p>
+              <p>Границы — это не стены.<br>Это правила, по которым с тобой можно.</p>
+              <p><strong>Вопрос:</strong><br>ты защищаешь себя или снова терпишь?</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="facts-view" data-facts-view="game" aria-hidden="true">
+          <div class="reaction-game" data-reaction-game data-game-state="idle">
+            <div class="reaction-game-head">
+              <p class="reaction-game-label">Мини-игра: тест на реакцию</p>
+              <button type="button" class="btn btn-ghost reaction-reset" data-reaction-reset>Сбросить игру</button>
+            </div>
+            <div class="reaction-game-status">
+              <span>Лучший результат: <strong data-reaction-best>—</strong></span>
+              <span>Последний: <strong data-reaction-last>—</strong></span>
+            </div>
+            <button type="button" class="reaction-surface" data-reaction-surface>
+              <span data-reaction-message>Нажми, чтобы начать. Когда цвет сменится на яркий, нажми как можно быстрее.</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="facts-popup-footer" data-facts-footer>
+        <a
+          href="https://www.threads.com/@progressive_students_club?hl=ru"
+          class="facts-threads-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Смотреть в Threads →
+        </a>
+      </div>
+    </section>
+  </div>
+  <script>
+    window.CONTACT_API_URL = 'https://progressive-students-club.onrender.com/api/contact';
+  </script>
+  <script src="main.js"></script>
+  <script src="meetings-data.js"></script>
+  <script src="meetings.js"></script>
+  <script src="script.js"></script>
+  <script>
+    const lightbox = GLightbox({
+      selector: '.glightbox',
+      touchNavigation: true,
+      loop: true,
+      autoplayVideos: false
+    });
+  </script>
+</body>
+</html>
